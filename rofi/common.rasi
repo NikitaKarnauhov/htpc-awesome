@@ -1,0 +1,88 @@
+configuration {
+    font: "Play 20";
+}
+
+* {
+    background:                  #2BA7D7;
+    lightfg:                     #75C6E5;
+    red:                         #D72B72;
+    blue:                        #352BD7;
+    foreground:                  White;
+    border-color:                var(background);
+    lightbg:                     var(background);
+    selected-normal-background:  var(foreground);
+    selected-normal-foreground:  Black;
+    selected-active-foreground:  var(background);
+    separatorcolor:              var(foreground);
+    urgent-foreground:           var(red);
+    alternate-urgent-background: var(lightbg);
+    background-color:            transparent;
+    normal-background:           var(background);
+    selected-urgent-background:  var(red);
+    alternate-active-background: var(lightbg);
+    spacing:                     2;
+    alternate-normal-foreground: var(foreground);
+    urgent-background:           var(background);
+    active-foreground:           var(blue);
+    selected-active-background:  var(blue);
+    active-background:           var(background);
+    alternate-normal-background: var(lightbg);
+    selected-urgent-foreground:  var(background);
+    normal-foreground:           var(foreground);
+    alternate-urgent-foreground: var(red);
+    alternate-active-foreground: var(blue);
+}
+
+element {
+    padding:       10px;
+    cursor:        pointer;
+    spacing:       5px;
+    border:        0;
+    border-radius: 8px;
+}
+
+window {
+    padding:          5;
+    background-color: var(background);
+    border:           1;
+    border-radius:    10px;
+    width:            600px;
+}
+
+mainbox {
+    padding: 0;
+    border:  0;
+}
+
+message {
+    padding:      10px;
+    border:       0px 0px 2px 0px;
+}
+
+textbox {
+    text-color: var(foreground);
+    markup: true;
+    horizontal-align: 0.5;
+}
+
+listview {
+    padding:      2px;
+    scrollbar:    true;
+    spacing:      2px;
+    fixed-height: 0;
+    border:       0;
+    lines:        8;
+}
+
+scrollbar {
+    width:        4px;
+    padding:      0 0 0 2px;
+    handle-width: 8px;
+    border:       0;
+    handle-radius:                  2px;
+    handle-color: var(foreground);
+}
+
+inputbar {
+    enabled: false;
+}

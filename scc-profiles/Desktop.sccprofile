@@ -1,0 +1,63 @@
+{
+    "_": "", 
+    "buttons": {
+        "A": {
+            "action": "shell('xdotool key Return')"
+        }, 
+        "B": {
+            "action": "shell('xdotool key Escape')"
+        }, 
+        "BACK": {
+            "action": "shell('xdotool key Alt+Left')"
+        }, 
+        "C": {
+            "action": "feedback(BOTH, 512.0, hold(None, shell('awesome-client unfullscreen_all\\(\\)'), 0.5))"
+        }, 
+        "LB": {
+            "action": "shell('xdotool key Ctrl+Page_Up')"
+        }, 
+        "LGRIP": {
+            "action": "shell('awesome-client focus_prev_client\\(\\)')"
+        }, 
+        "RB": {
+            "action": "shell('xdotool key Ctrl+Page_Down')"
+        }, 
+        "RGRIP": {
+            "action": "shell('awesome-client focus_next_client\\(\\)')"
+        }, 
+        "RPAD": {
+            "action": "button(Keys.BTN_MOUSE)"
+        }, 
+        "START": {
+            "action": "shell('xdotool key Alt+Right')"
+        }, 
+        "X": {
+            "action": "button(Keys.BTN_MOUSE)"
+        }, 
+        "Y": {
+            "action": "button(Keys.BTN_RIGHT)"
+        }
+    }, 
+    "cpad": {}, 
+    "gyro": {
+        "action": "mode(RPADTOUCH, sens(3.5, -1.0, 3.5, mouse(YAW)), None)"
+    }, 
+    "is_template": false, 
+    "menus": {}, 
+    "pad_left": {
+        "action": "feedback(LEFT, 4096, 16, ball(XY(mouse(Rels.REL_HWHEEL, 1.0), mouse(Rels.REL_WHEEL, 1.0))))"
+    }, 
+    "pad_right": {
+        "action": "smooth(8, 0.78, 2.0, feedback(RIGHT, 144, 5.0, ball(mouse())))"
+    }, 
+    "stick": {
+        "action": "dpad(button(Keys.KEY_UP), button(Keys.KEY_DOWN), button(Keys.KEY_LEFT), button(Keys.KEY_RIGHT))"
+    }, 
+    "trigger_left": {
+        "action": "trigger(50, 50, button(Keys.BTN_RIGHT))"
+    }, 
+    "trigger_right": {
+        "action": "trigger(50, 50, button(Keys.BTN_MOUSE))"
+    }, 
+    "version": 1.4
+}

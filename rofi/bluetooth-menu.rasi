@@ -1,0 +1,6 @@
+@import "common.rasi"
+
+listview {
+    lines: 1;
+    scrollbar: false;
+}

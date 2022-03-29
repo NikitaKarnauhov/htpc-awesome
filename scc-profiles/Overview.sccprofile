@@ -1,0 +1,51 @@
+{
+    "_": "", 
+    "buttons": {
+        "A": {
+            "action": "shell('awesome-client handle_a_button\\(\\)')"
+        }, 
+        "B": {
+            "action": "shell('awesome-client client_close\\(\\)')"
+        }, 
+        "C": {
+            "action": "feedback(BOTH, 512.0, hold(None, shell('awesome-client unfullscreen_all\\(\\)'), 0.5))"
+        }, 
+        "LGRIP": {
+            "action": "shell('awesome-client focus_prev_client\\(\\)')"
+        }, 
+        "RGRIP": {
+            "action": "shell('awesome-client focus_next_client\\(\\)')"
+        }, 
+        "RPAD": {
+            "action": "button(Keys.BTN_MOUSE)"
+        }, 
+        "X": {
+            "action": "button(Keys.BTN_MOUSE)"
+        }, 
+        "Y": {
+            "action": "shell('awesome-client client_show_menu\\(\\)')"
+        }
+    }, 
+    "cpad": {}, 
+    "gyro": {
+        "action": "mode(RPADTOUCH, sens(3.5, -1.0, 3.5, mouse(YAW)), None)"
+    }, 
+    "is_template": false, 
+    "menus": {}, 
+    "pad_left": {
+        "action": "feedback(LEFT, 4096, 16, ball(XY(mouse(Rels.REL_HWHEEL, 1.0), mouse(Rels.REL_WHEEL, 1.0))))"
+    }, 
+    "pad_right": {
+        "action": "smooth(8, 0.78, 2.0, feedback(RIGHT, 144, 5.0, ball(mouse())))"
+    }, 
+    "stick": {
+        "action": "dpad(shell('awesome-client focus_up\\(\\)'), shell('awesome-client focus_down\\(\\)'), shell('awesome-client focus_left\\(\\)'), shell('awesome-client focus_right\\(\\)'))"
+    }, 
+    "trigger_left": {
+        "action": "trigger(50, 50, button(Keys.BTN_RIGHT))"
+    }, 
+    "trigger_right": {
+        "action": "trigger(50, 50, button(Keys.BTN_MOUSE))"
+    }, 
+    "version": 1.4
+}

@@ -1,0 +1,50 @@
+@import "common.rasi"
+
+configuration {
+    show-icons: true;
+    icon-theme: "Papirus";
+    drun-display-format: "{name}";
+}
+
+window {
+    height: 1020px;
+    width:  1860px;
+}
+
+listview {
+    columns: 6;
+    spacing: 1%;
+    cycle: false;
+    dynamic: true;
+    layout: vertical;
+}
+
+element {
+    background-color:               @background;
+    text-color:                     @foreground;
+    orientation:                    vertical;
+    padding:                        1% 0% 1% 0%;
+}
+
+element-icon {
+    background-color: 				inherit;
+    text-color:       				inherit;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    size:                           96px;
+    border:                         0px;
+}
+
+element-text {
+    background-color: 				inherit;
+    text-color:       				inherit;
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         0.5% 1% 0% 1%;
+}
+
+message {
+    enabled: true;
+}
+

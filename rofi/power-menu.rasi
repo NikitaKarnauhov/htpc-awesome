@@ -1,0 +1,10 @@
+@import "common.rasi"
+
+message {
+    enabled: false;
+}
+
+listview {
+    lines: 5;
+    scrollbar: false;
+}
