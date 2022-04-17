@@ -1,0 +1,79 @@
+msgid ""
+msgstr ""
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# rc.lua
+
+msgid "Menu"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Maximize"
+msgstr ""
+
+# rofi-settings-menu.sh
+
+msgid "Select language"
+msgstr ""
+
+msgid "Select wallpaper"
+msgstr ""
+
+msgid "English"
+msgstr ""
+
+msgid "Russian"
+msgstr ""
+
+# rofi-bluetooth-menu.sh
+
+msgid "Power on"
+msgstr ""
+
+msgid "Power off"
+msgstr ""
+
+# rofi-power-menu.h
+
+msgid "Shut down"
+msgstr ""
+
+msgid "Reboot"
+msgstr ""
+
+msgid "Log out"
+msgstr ""
+
+msgid "Restart window manager"
+msgstr ""
+
+msgid "Turn off controller"
+msgstr ""
+
+# rofi-client-menu.sh
+
+msgid "Unmaximize"
+msgstr ""
+
+msgid "Unmaximize all windows"
+msgstr ""
+
+msgid "Profile"
+msgstr ""
+
+msgid "Auto"
+msgstr ""
+
+msgid "Window redirection"
+msgstr ""
+
+msgid "Off"
+msgstr ""
+
+msgid "On"
+msgstr ""

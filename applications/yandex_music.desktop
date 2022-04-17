@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Yamdex.Music
+Name[ru]=Яндекс.Музыка
+Comment=Online music streaming
+Exec=firefox --no-remote -P yandex_music --class yandex_music --kiosk https://music.yandex.ru
+Icon=yandex_music
+Terminal=false
+Type=Application
+Categories=Audio;AudioVideo;Network;

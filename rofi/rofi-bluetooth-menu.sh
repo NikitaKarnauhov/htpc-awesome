@@ -1,5 +1,7 @@
 #!/bin/bash
 
+. "${HOME}/.local/share/htpc-awesome/htpc-awesome-functions.sh"
+
 script_path="${HOME}/.local/bin/rofi-bluetooth-menu.sh"
 
 do_power_on() {
@@ -12,12 +14,12 @@ do_power_off() {
 
 if [[ -v "ROFI_RETV" ]]; then
     if [[ "${ROFI_RETV}" == "0" ]]; then
-        echo -ne "\0message\x1f<b>Bluetooth</b>\n"
+        echo -ne "\0message\x1f<b>$(gettext "Bluetooth")</b>\n"
 
         if [[ "${bluetooth_powered_on}" == "false" ]]; then
-            echo -ne "Включить питание\0info\x1fcommand=do_power_on\n"
+            echo -ne "$(gettext "Power on")\0info\x1fcommand=do_power_on\n"
         else
-            echo -ne "Выключить питание\0info\x1fcommand=do_power_off\n"
+            echo -ne "$(gettext "Power off")\0info\x1fcommand=do_power_off\n"
         fi
     elif [[ "${ROFI_RETV}" == "1" ]]; then
         declare "${ROFI_INFO}"

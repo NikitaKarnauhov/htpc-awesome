@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Pegasus
+Comment=A graphical frontend for browsing your game library and launching all kinds of emulators
+Exec=pegasus-fe %U
+Icon=pegasus-fe
+Terminal=false
+Type=Application
+Categories=Game;
+PrefersNonDefaultGPU=true
+X-KDE-RunOnDiscreteGpu=true

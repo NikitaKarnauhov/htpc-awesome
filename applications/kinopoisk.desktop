@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Kinopoisk
+Name[ru]=Кинопоиск
+Comment=Online cinema
+Exec=firefox --no-remote -P kinopoisk --class kinopoisk --kiosk https://hd.kinopoisk.ru
+Icon=kinopoisk
+Terminal=false
+Type=Application
+Categories=Video;Network;

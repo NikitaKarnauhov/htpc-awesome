@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Okko
+Name[ru]=Окко
+Comment=Online cinema
+Exec=firefox --no-remote -P okko --class okko --kiosk https://okko.tv
+Icon=okko
+Terminal=false
+Type=Application
+Categories=Video;Network;

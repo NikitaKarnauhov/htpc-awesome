@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Beeline TV
+Name[ru]=Билайн ТВ
+Comment=Online cinema
+Comment[ru]=Фильмы, сериалы, мультфильмы смотреть онлайн бесплатно в хорошем качестве, просмотр фильмов онлайн без рекламы и регистрации
+Exec=firefox --no-remote -P beeline_tv --class beeline_tv --kiosk https://beeline.tv
+Icon=beeline_tv
+Terminal=false
+Type=Application
+Categories=Video;Network;

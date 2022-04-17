@@ -8,10 +8,10 @@
             "action": "shell('xdotool key Escape')"
         }, 
         "BACK": {
-            "action": "shell('xdotool key Alt+Left')"
+            "action": "feedback(BOTH, 512.0, hold(shell('rofi-power-menu.sh'), shell('xdotool key Alt+Left'), 0.5))"
         }, 
         "C": {
-            "action": "feedback(BOTH, 512.0, hold(None, shell('awesome-client unfullscreen_all\\(\\)'), 0.5))"
+            "action": "feedback(BOTH, 512.0, hold(shell('awesome-client unfullscreen_all\\(\\)'), button(Keys.KEY_PLAYPAUSE), 0.5))"
         }, 
         "LB": {
             "action": "shell('xdotool key Ctrl+Page_Up')"
@@ -29,7 +29,7 @@
             "action": "button(Keys.BTN_MOUSE)"
         }, 
         "START": {
-            "action": "shell('xdotool key Alt+Right')"
+            "action": "feedback(BOTH, 512.0, hold(shell('awesome-client client_show_menu\\(\\)'), shell('xdotool key Alt+Right'), 0.5))"
         }, 
         "X": {
             "action": "button(Keys.BTN_MOUSE)"

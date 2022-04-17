@@ -7,17 +7,29 @@
         "B": {
             "action": "shell('awesome-client client_close\\(\\)')"
         }, 
+        "BACK": {
+            "action": "feedback(BOTH, 512.0, hold(shell('rofi-power-menu.sh'), shell('xdotool key Alt+Left'), 0.5))"
+        }, 
         "C": {
-            "action": "feedback(BOTH, 512.0, hold(None, shell('awesome-client unfullscreen_all\\(\\)'), 0.5))"
+            "action": "feedback(BOTH, 512.0, hold(shell('awesome-client client_toggle_fullscreen\\(\\)'), shell('rofi-applications-menu.sh'), 0.5))"
+        }, 
+        "LB": {
+            "action": "shell('xdotool key Ctrl+Page_Up')"
         }, 
         "LGRIP": {
             "action": "shell('awesome-client focus_prev_client\\(\\)')"
+        }, 
+        "RB": {
+            "action": "shell('xdotool key Ctrl+Page_Down')"
         }, 
         "RGRIP": {
             "action": "shell('awesome-client focus_next_client\\(\\)')"
         }, 
         "RPAD": {
             "action": "button(Keys.BTN_MOUSE)"
+        }, 
+        "START": {
+            "action": "feedback(BOTH, 512.0, hold(shell('awesome-client client_show_menu\\(\\)'), shell('xdotool key Alt+Right'), 0.5))"
         }, 
         "X": {
             "action": "button(Keys.BTN_MOUSE)"

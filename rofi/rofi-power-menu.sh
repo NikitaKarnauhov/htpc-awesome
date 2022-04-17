@@ -1,5 +1,7 @@
 #!/bin/bash
 
+. "${HOME}/.local/share/htpc-awesome/htpc-awesome-functions.sh"
+
 script_path="${HOME}/.local/bin/rofi-power-menu.sh"
 
 do_poweroff() {
@@ -24,11 +26,11 @@ do_turn_controller_off() {
 
 if [[ -v "ROFI_RETV" ]]; then
     if [[ "${ROFI_RETV}" == "0" ]]; then
-        echo -ne "Выключить систему\0info\x1fcommand=do_poweroff\n"
-        echo -ne "Перезагрузить\0info\x1fcommand=do_reboot\n"
-        echo -ne "Завершить сессию\0info\x1fcommand=do_logout\n"
-        echo -ne "Перезапустить менеджер окон\0info\x1fcommand=do_restart_awesome\n"
-        echo -ne "Выключить контроллер\0info\x1fcommand=do_turn_controller_off\n"
+        echo -ne "$(gettext "Shut down")\0info\x1fcommand=do_poweroff\n"
+        echo -ne "$(gettext "Reboot")\0info\x1fcommand=do_reboot\n"
+        echo -ne "$(gettext "Log out")\0info\x1fcommand=do_logout\n"
+        echo -ne "$(gettext "Restart window manager")\0info\x1fcommand=do_restart_awesome\n"
+        echo -ne "$(gettext "Turn off controller")\0info\x1fcommand=do_turn_controller_off\n"
     elif [[ "${ROFI_RETV}" == "1" ]]; then
         declare "${ROFI_INFO}"
         if [[ -v "command" ]]; then

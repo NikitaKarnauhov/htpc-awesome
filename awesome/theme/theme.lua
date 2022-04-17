@@ -2,9 +2,12 @@ local theme_path = require("gears.filesystem").get_configuration_dir() .. "theme
 
 local theme = {}
 
+theme.wallpaper_name = "lake"
+theme.wallpaper_dir = theme_path .. "dynamic-wallpaper"
+
 theme.wallpaper = function(s)
     local h = os.date("*t", os.time()).hour
-    return theme_path .. "dynamic-wallpaper/lake/" .. tostring(h) .. ".jpg"
+    return theme.wallpaper_dir .. "/" .. theme.wallpaper_name .. "/" .. tostring(h) .. ".jpg"
 end
 
 theme.font      = "Play 13"

@@ -8,7 +8,7 @@
             "action": "button(Keys.BTN_EAST)"
         }, 
         "BACK": {
-            "action": "button(Keys.KEY_BACKSLASH)"
+            "action": "feedback(BOTH, 512.0, hold(shell('rofi-power-menu.sh'), button(BTN_SELECT), 0.5))"
         }, 
         "C": {
             "action": "feedback(BOTH, 512.0, hold(shell('kodi-send --action=togglefullscreen'), button(Keys.BTN_MODE), 0.5))"
@@ -32,7 +32,7 @@
             "action": "button(Keys.BTN_THUMBR)"
         }, 
         "START": {
-            "action": "button(Keys.BTN_START)"
+            "action": "feedback(BOTH, 512.0, hold(shell('awesome-client client_show_menu\\(\\)'), button(BTN_START), 0.5))"
         }, 
         "X": {
             "action": "button(Keys.BTN_NORTH)"

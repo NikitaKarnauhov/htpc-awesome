@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=RPCS3
+Comment=The PlayStation 3 Emulator
+Exec=rpcs3 %U
+Icon=rpcs3
+Terminal=false
+Type=Application
+Categories=Game;
+PrefersNonDefaultGPU=true
+X-KDE-RunOnDiscreteGpu=true

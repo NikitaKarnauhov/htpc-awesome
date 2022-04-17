@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="64"
+   height="64"
+   viewBox="0 0 64 64"
+   fill="none"
+   version="1.1"
+   id="svg29051"
+   sodipodi:docname="okko.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview29053"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     width="64px"
+     inkscape:zoom="5.2590361"
+     inkscape:cx="59.041237"
+     inkscape:cy="83.095074"
+     inkscape:window-width="2560"
+     inkscape:window-height="1387"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg29051" />
+  <mask
+     id="mask0"
+     mask-type="alpha"
+     maskUnits="userSpaceOnUse"
+     x="0"
+     y="0"
+     width="166"
+     height="166">
+    <path
+       d="m 83,166 c 45.84,0 83,-37.16 83,-83 C 166,37.1604 128.84,0 83,0 37.1604,0 0,37.1604 0,83 c 0,45.84 37.1604,83 83,83 z"
+       fill="#ffffff"
+       id="path29035" />
+  </mask>
+  <path
+     d="m 33.000001,61.000002 c 15.464095,0 28.000005,-12.53591 28.000005,-28 C 61.000006,17.536042 48.464096,5 33.000001,5 17.536039,5 5,17.536042 5,33.000002 c 0,15.46409 12.536039,28 28.000001,28 z"
+     fill="url(#paint0_linear)"
+     id="path29038-0"
+     style="opacity:0.2;fill:#000000;fill-opacity:1;stroke-width:0.337349" />
+  <g
+     mask="url(#mask0)"
+     id="g29042"
+     transform="matrix(0.3373494,0,0,0.3373494,4,4)">
+    <path
+       d="m 83,166 c 45.84,0 83,-37.16 83,-83 C 166,37.1604 128.84,0 83,0 37.1604,0 0,37.1604 0,83 c 0,45.84 37.1604,83 83,83 z"
+       fill="url(#paint0_linear)"
+       id="path29038"
+       style="fill:url(#paint0_linear)" />
+    <path
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       d="m 82.9997,54.2958 c 21.0093,0 38.0413,17.0323 38.0413,38.0417 0,21.0095 -17.032,38.0415 -38.0413,38.0415 -21.0094,0 -38.0417,-17.032 -38.0417,-38.0415 0,-21.0094 17.0323,-38.0417 38.0417,-38.0417 z m 0,17.2917 c -11.4609,0 -20.75,9.2891 -20.75,20.75 0,11.4605 9.2891,20.7505 20.75,20.7505 11.4609,0 20.7503,-9.29 20.7503,-20.7505 0,-11.4609 -9.2894,-20.75 -20.7503,-20.75 z M 60.1747,31.125 c 4.2018,0 7.6083,3.4065 7.6083,7.6083 0,4.2019 -3.4065,7.6084 -7.6083,7.6084 -4.2019,0 -7.6084,-3.4065 -7.6084,-7.6084 0,-4.2018 3.4065,-7.6083 7.6084,-7.6083 z m 22.825,0 c 4.2019,0 7.6083,3.4065 7.6083,7.6083 0,4.2019 -3.4064,7.6084 -7.6083,7.6084 -4.2019,0 -7.6084,-3.4065 -7.6084,-7.6084 0,-4.2018 3.4065,-7.6083 7.6084,-7.6083 z m 22.8253,0 c 4.202,0 7.608,3.4065 7.608,7.6083 0,4.2019 -3.406,7.6084 -7.608,7.6084 -4.202,0 -7.6087,-3.4065 -7.6087,-7.6084 0,-4.2018 3.4067,-7.6083 7.6087,-7.6083 z"
+       fill="#ffffff"
+       id="path29040" />
+  </g>
+  <defs
+     id="defs29049">
+    <linearGradient
+       id="paint0_linear"
+       x1="144"
+       y1="19.5"
+       x2="19.5"
+       y2="142"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#A22BD5"
+         id="stop29044" />
+      <stop
+         offset="1"
+         stop-color="#3C082F"
+         id="stop29046" />
+    </linearGradient>
+    <mask
+       id="mask0-6"
+       mask-type="alpha"
+       maskUnits="userSpaceOnUse"
+       x="0"
+       y="0"
+       width="166"
+       height="166">
+      <path
+         d="m 83,166 c 45.84,0 83,-37.16 83,-83 C 166,37.1604 128.84,0 83,0 37.1604,0 0,37.1604 0,83 c 0,45.84 37.1604,83 83,83 z"
+         fill="#ffffff"
+         id="path29035-2" />
+    </mask>
+    <linearGradient
+       id="paint0_linear-9"
+       x1="144"
+       y1="19.5"
+       x2="19.5"
+       y2="142"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.3373494,0,0,0.3373494,58.230814,95.901258)">
+      <stop
+         stop-color="#A22BD5"
+         id="stop29044-1" />
+      <stop
+         offset="1"
+         stop-color="#3C082F"
+         id="stop29046-2" />
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ProtonUP
+Comment=Proton-GE manager
+Exec=pupgui %U
+Icon=pupgui
+Terminal=false
+Type=Application
+Categories=Game;Utility;
+PrefersNonDefaultGPU=true
+X-KDE-RunOnDiscreteGpu=true
