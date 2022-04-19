@@ -4,6 +4,7 @@ packages=(
     awesome
     bluez
     dex-autostart
+    onboard
     papirus-icon-theme
     picom
     python3-gobject
@@ -12,6 +13,7 @@ packages=(
     socat
     strace
     xdotool
+    xkb-switch
     xkill
     xset
 )
@@ -37,5 +39,12 @@ install -m 0644 -D -t "${local_share_dir}/applications" applications/*.desktop
 install -m 0644 -D -t "${local_share_dir}/icons" icons/*.png icons/*.svg
 install -m 0644 -D -t "${local_share_dir}/htpc-awesome" htpc-awesome/*
 install -m 0644 -D -T i18n/ru.mo "${local_share_dir}/locale/ru/LC_MESSAGES/htpc-awesome.mo"
+
+site_dir="$(python -m site --user-site)"
+install -m 0644 -D -t "${site_dir}" onboard/scripts/switch_keyboard_language.py
+install -m 0755 -D -t "${local_bin_dir}" onboard/*.sh
+install -m 0644 -D -t "${local_share_dir}/onboard/layouts/images" onboard/layouts/images/*.svg
+install -m 0644 -D -t "${local_share_dir}/onboard/layouts" onboard/layouts/*.{svg,onboard}
+install -m 0644 -D -t "${local_share_dir}/onboard/themes" onboard/themes/*.theme
 
 cp -r awesome "${config_dir}"

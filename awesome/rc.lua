@@ -52,6 +52,7 @@ spawn_once("picom --dbus")
 spawn_once("scc-daemon --alone start")
 spawn_once("kodi -fs")
 spawn_once("lansinkd.sh")
+spawn_once("onboard.sh start")
 
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
@@ -154,6 +155,9 @@ local function set_profile(profile)
     end
     current_profile = profile
     spawn("scc set-profile " .. profile, false)
+    if profile ~= "Desktop" then
+        spawn({"onboard.sh", "hide"}, false)
+    end
 end
 
 local client_profiles = {}
@@ -1108,6 +1112,18 @@ awful.rules.rules = {
         properties = {
            titlebars_enabled = false,
            hidden = true
+        }
+    },
+
+    -- Onboard
+    {
+        rule = {
+            class = "Onboard"
+        },
+        properties = {
+           titlebars_enabled = false,
+           floating = true,
+           focusable = false
         }
     },
 }

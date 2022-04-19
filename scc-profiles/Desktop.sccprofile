@@ -35,7 +35,7 @@
             "action": "button(Keys.BTN_MOUSE)"
         }, 
         "Y": {
-            "action": "button(Keys.BTN_RIGHT)"
+            "action": "feedback(BOTH, 512.0, hold(shell('onboard.sh toggle'), button(Keys.BTN_RIGHT), 0.5))"
         }
     }, 
     "cpad": {}, 
