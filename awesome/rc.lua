@@ -124,7 +124,7 @@ local function get_default_bypass_compositor(c)
         return nil
     end
 
-    if cl.class == "Kodi" then
+    if cl.class == "Kodi" or cl.class == "Virt-viewer" then
         return 2
     end
 
@@ -149,10 +149,17 @@ awesome.register_xproperty("STEAM_GAME", "number")
 
 local current_profile = nil
 
-local function set_profile(profile)
+local function set_profile(profile, cl)
     if profile == current_profile then
         return
     end
+
+    if profile == "AndroidTV" then
+        spawn("android-tv.sh plug-js", false)
+    elseif current_profile == "AndroidTV" then
+        spawn("android-tv.sh unplug-js", false)
+    end
+
     current_profile = profile
     spawn("scc set-profile " .. profile, false)
     if profile ~= "Desktop" then
@@ -169,6 +176,8 @@ local function get_client_auto_profile(cl)
 
     if cl.class == "Kodi" then
         return "Kodi"
+    elseif cl.class == "Virt-viewer" then
+        return "AndroidTV"
     elseif (cl.class == "RPCS3" and string.find(cl.name, "FPS")) then
         return "RPCS3"
     elseif (cl.class == "dolphin-emu" and string.find(cl.name, "JIT64")) or
@@ -232,7 +241,7 @@ local function update_profile()
         return
     end
 
-    set_profile(get_client_profile(cl))
+    set_profile(get_client_profile(cl), cl)
 end
 
 set_profile("Overview")
@@ -488,6 +497,11 @@ local launchers = make_launchers({
     launcher{
         image   = find_icon("kodi"),
         command = "/usr/bin/kodi",
+    },
+    launcher{
+        image   = find_icon("android"),
+        command = "/usr/bin/dex-autostart " .. gears.filesystem.get_xdg_data_home() .. "applications/android-tv.desktop",
+        fullscreen = true,
     },
     launcher{
         image   = find_icon("pegasus-fe"),

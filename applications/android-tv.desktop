@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Android TV
+Comment=Android TV on QEMU/KVM
+Comment[ru]=Android TV на QEMU/KVM
+Exec=android-tv.sh
+Icon=android
+Terminal=false
+Type=Application
+Categories=System;Video;Network;
+Keywords=Emulators;Virtualization;KVM

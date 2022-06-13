@@ -1,0 +1,13 @@
+[Unit]
+Description=Android TV virtual machine
+After=network.target
+After=libvirtd.socket
+
+[Service]
+Type=exec
+RemainAfterExit=yes
+ExecStart=/home/jinx/.local/bin/android-tv.sh start
+ExecStop=/home/jinx/.local/bin/android-tv.sh stop
+
+[Install]
+WantedBy=default.target

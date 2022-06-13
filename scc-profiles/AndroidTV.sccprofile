@@ -1,0 +1,64 @@
+{
+    "_": "", 
+    "buttons": {
+        "A": {
+            "action": "button(Keys.BTN_GAMEPAD)"
+        }, 
+        "B": {
+            "action": "button(Keys.BTN_EAST)"
+        }, 
+        "BACK": {
+            "action": "feedback(BOTH, 512.0, hold(shell('rofi-power-menu.sh'), button(BTN_SELECT), 0.5))"
+        }, 
+        "C": {
+            "action": "feedback(BOTH, 512.0, hold(shell('awesome-client unfullscreen_all\\(\\)'), button(Keys.BTN_MODE), 0.5))"
+        }, 
+        "LB": {
+            "action": "button(Keys.BTN_TL)"
+        }, 
+        "LGRIP": {
+            "action": "shell('awesome-client focus_prev_client\\(\\)')"
+        }, 
+        "RB": {
+            "action": "button(Keys.BTN_TR)"
+        }, 
+        "RGRIP": {
+            "action": "shell('awesome-client focus_next_client\\(\\)')"
+        }, 
+        "RPAD": {
+            "action": "button(Keys.BTN_THUMBR)"
+        }, 
+        "START": {
+            "action": "feedback(BOTH, 512.0, hold(shell('awesome-client client_show_menu\\(\\)'), button(BTN_START), 0.5))"
+        }, 
+        "STICKPRESS": {
+            "action": "button(Keys.BTN_THUMBL)"
+        }, 
+        "X": {
+            "action": "button(Keys.BTN_NORTH)"
+        }, 
+        "Y": {
+            "action": "button(Keys.BTN_WEST)"
+        }
+    }, 
+    "cpad": {}, 
+    "gyro": {},
+    "is_template": false, 
+    "menus": {}, 
+    "pad_left": {
+        "action": "dpad(hatup(Axes.ABS_HAT0Y), hatdown(Axes.ABS_HAT0Y), hatleft(Axes.ABS_HAT0X), hatright(Axes.ABS_HAT0X))"
+    }, 
+    "pad_right": {
+        "action": "feedback(RIGHT, 144.0, 80.0, sens(10.0, 10.0, ball(XY(axis(Axes.ABS_RX), axis(Axes.ABS_RY)))))"
+    }, 
+    "stick": {
+        "action": "sens(1.2, 1.2, XY(axis(Axes.ABS_X), raxis(Axes.ABS_Y)))"
+    }, 
+    "trigger_left": {
+        "action": "axis(Axes.ABS_Z)"
+    }, 
+    "trigger_right": {
+        "action": "axis(Axes.ABS_RZ)"
+    }, 
+    "version": 1.4
+}
